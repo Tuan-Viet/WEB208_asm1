@@ -4,6 +4,7 @@ import { ProductListComponent } from './pages/product-list/product-list.componen
 import { ProductAddComponent } from './pages/product-add/product-add.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ProductEditComponent } from './pages/product-edit/product-edit.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
       { path: '', redirectTo: "product", pathMatch: "full" },
       { path: 'product', component: ProductListComponent },
       { path: 'product/add', component: ProductAddComponent },
-      { path: 'product/:id', component: ProductAddComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
       { path: 'product/:id/edit', component: ProductEditComponent },
     ]
   }
